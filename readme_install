@@ -16,8 +16,12 @@ curl -fsSL "https://aptos.dev/scripts/install_cli.py" | python3
 
 mkdir my-first-dapp
 cd my-first-dapp
-
+pwd
 /home/ubuntu/my-first-dapp
+ubuntu@ip-172-31-44-243:~/my-first-dapp$ /home/ubuntu/.local/bin/aptos move init --name my_todo_list
+{
+  "Result": "Success"
+}
 
 
 #####      /home/ubuntu/.local/bin/aptos  init
