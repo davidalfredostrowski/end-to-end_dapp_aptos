@@ -17,5 +17,7 @@ curl -fsSL "https://aptos.dev/scripts/install_cli.py" | python3
 mkdir my-first-dapp
 cd my-first-dapp
 
+/home/ubuntu/my-first-dapp
+
 
 #####      /home/ubuntu/.local/bin/aptos  init
