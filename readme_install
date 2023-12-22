@@ -217,6 +217,33 @@ module todolist_addr::todolist {
 }
 
 
+ubuntu@ip-172-31-44-243:~/my-first-dapp$ /home/ubuntu/.local/bin/aptos move compile
+Compiling, may take a little while to download git dependencies...
+FETCHING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING my_todo_list
+warning[W09001]: unused alias
+  ┌─ /home/ubuntu/my-first-dapp/sources/todolist.move:3:26
+  │
+3 │     use aptos_framework::account;
+  │                          ^^^^^^^ Unused 'use' of alias 'account'. Consider removing it
+
+warning: unused alias
+  ┌─ /home/ubuntu/my-first-dapp/sources/todolist.move:3:26
+  │
+3 │     use aptos_framework::account;
+  │                          ^^^^^^^ Unused 'use' of alias 'account'. Consider removing it
+
+{
+  "Result": [
+    "23393ecdc3ea6c15db022ae5425c5353964a597cefc5ed45cc7e3256a7e133cb::todolist"
+  ]
+}
+ubuntu@ip-172-31-44-243:~/my-first-dapp$
+
+
 
 
 
