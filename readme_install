@@ -244,6 +244,51 @@ warning: unused alias
 ubuntu@ip-172-31-44-243:~/my-first-dapp$
 
 
+ubuntu@ip-172-31-44-243:~/my-first-dapp$  /home/ubuntu/.local/bin/aptos move test
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING my_todo_list
+warning: unused alias
+  ┌─ /home/ubuntu/my-first-dapp/sources/todolist.move:3:26
+  │
+3 │     use aptos_framework::account;
+  │                          ^^^^^^^ Unused 'use' of alias 'account'. Consider removing it
+
+Running Move unit tests
+[ PASS    ] 0x23393ecdc3ea6c15db022ae5425c5353964a597cefc5ed45cc7e3256a7e133cb::todolist::account_can_not_update_task
+[ FAIL    ] 0x23393ecdc3ea6c15db022ae5425c5353964a597cefc5ed45cc7e3256a7e133cb::todolist::test_flow
+
+Test failures:
+
+Failures in 0x23393ecdc3ea6c15db022ae5425c5353964a597cefc5ed45cc7e3256a7e133cb::todolist:
+
+┌── test_flow ──────
+│ error[E11001]: test failure
+│    ┌─ /home/ubuntu/.move/https___github_com_aptos-labs_aptos-core_git_mainnet/aptos-move/framework/aptos-framework/sources/event.move:19:9
+│    │
+│ 18 │     public fun emit<T: store + drop>(msg: T) {
+│    │                ---- In this function in 0x1::event
+│ 19 │         assert!(features::module_event_enabled(), std::error::invalid_state(EMODULE_EVENT_NOT_SUPPORTED));
+│    │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Test was not expected to error, but it aborted with code 196609 originating in the module 0000000000000000000000000000000000000000000000000000000000000001::event rooted here
+│
+│
+│ stack trace
+│       todolist::create_task(/home/ubuntu/my-first-dapp/sources/todolist.move:59)
+│       todolist::test_flow(/home/ubuntu/my-first-dapp/sources/todolist.move:87)
+│
+└──────────────────
+
+Test result: FAILED. Total tests: 2; passed: 1; failed: 1
+{
+  "Error": "Move unit tests failed"
+}
+ubuntu@ip-172-31-44-243:~/my-first-dapp$
+
+
+
+
+
 
 
 
