@@ -69,6 +69,52 @@ profiles:
 
 
 
+ubuntu@ip-172-31-44-243:~/my-first-dapp$ vi Move.toml
+ubuntu@ip-172-31-44-243:~/my-first-dapp$
+
+
+ubuntu@ip-172-31-44-243:~/my-first-dapp$ vi Move.toml
+[package]
+name = "my_todo_list"
+version = "1.0.0"
+authors = []
+
+[addresses]
+todolist_addr='23393ecdc3ea6c15db022ae5425c5353964a597cefc5ed45cc7e3256a7e133cb'
+
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
+~
+~
+~
+
+
+ubuntu@ip-172-31-44-243:~/my-first-dapp/sources$ vi todolist.move
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
