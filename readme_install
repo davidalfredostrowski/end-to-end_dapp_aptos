@@ -48,3 +48,30 @@ Aptos CLI is now set up for account 0x23393ecdc3ea6c15db022ae5425c5353964a597cef
 ubuntu@ip-172-31-44-243:~/my-first-dapp$
 
 
+
+ubuntu@ip-172-31-44-243:~/my-first-dapp$ cd .aptos/
+ubuntu@ip-172-31-44-243:~/my-first-dapp/.aptos$ ls
+config.yaml
+ubuntu@ip-172-31-44-243:~/my-first-dapp/.aptos$ vi config.yaml
+ubuntu@ip-172-31-44-243:~/my-first-dapp/.aptos$
+---
+profiles:
+  default:
+    private_key: "0x4f3ebcfe80948dfc57d83601398c562e5f8274f0d1a5f3f4647afffc0d1c69fe"
+    public_key: "0xf7a94f8866213467dc140ca47d26469a8700e77930943cc12237bdf5b46c8848"
+    account: 23393ecdc3ea6c15db022ae5425c5353964a597cefc5ed45cc7e3256a7e133cb
+    rest_url: "https://fullnode.devnet.aptoslabs.com"
+    faucet_url: "https://faucet.devnet.aptoslabs.com"
+~
+~
+~
+
+
+
+
+
+
+
+
+
+
