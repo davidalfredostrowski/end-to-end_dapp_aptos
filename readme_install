@@ -14,4 +14,8 @@ pip3 install aptos-sdk
 git clone https://github.com/aptos-labs/aptos-core.git
 curl -fsSL "https://aptos.dev/scripts/install_cli.py" | python3
 
-/home/ubuntu/.local/bin/aptos  init
+mkdir my-first-dapp
+cd my-first-dapp
+
+
+#####      /home/ubuntu/.local/bin/aptos  init
