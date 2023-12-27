@@ -520,6 +520,23 @@ reportWebVitals();
 
 
 
+##### aptos breaking on AptosWalletAdapterProvider....
+##### tried backing out the relevant module 
+***** next try backing all aptos modules to the latest one
+
+*#### apparently breaking on index.tsx    for AptosWalletAdapeterProvider plugins autoconnect......
+
+the first time through but not on the second connect....??????/
+
+
+now i am on i-05fb7c67d5ceff5ae
+
+t2-large....
+
+
+
+
+
 
 
 
