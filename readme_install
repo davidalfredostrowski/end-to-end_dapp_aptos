@@ -423,6 +423,52 @@ https://explorer.aptoslabs.com/account/0x23393ecdc3ea6c15db022ae5425c5353964a597
 i-032919bba7a398782
 
 
+# pick up on existing node
+# the computer stalled with the wallet libraries....
+
+
+ npx create-react-app client --template typescript
+
+# this is stalling!  - i am switching to t2.xlarge
+# and going to experiment with that.....
+
+
+
+
+cd my-first-dapp
+ls
+npx create-react-app client --template typescript
+cd client
+ls
+npm start
+cd src
+ls
+vi App.tsx
+ls
+3
+
+
+# now add the following to App.tsx
+
+
+##### two things : 
+
+### 1) I needed to update my version of ec2
+### 2) i needed to update the version of antd
+
+
+ubuntu@ip-172-31-37-29:~/my-first-dapp/client$ npm -version    antd
+10.2.3
+ubuntu@ip-172-31-37-29:~/my-first-dapp/client$
+
+
+
+
+
+
+
+
+
 
 
 
