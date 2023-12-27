@@ -538,6 +538,33 @@ t2-large....
 
 
 
+ubuntu@ip-172-31-37-29:~/my-first-dapp/move/.aptos$ vi config.yaml
+ubuntu@ip-172-31-37-29:~/my-first-dapp/move/.aptos$ cd ..
+ubuntu@ip-172-31-37-29:~/my-first-dapp/move$ rm -r .aptos
+ubuntu@ip-172-31-37-29:~/my-first-dapp/move$
+/home/ubuntu/.local/bin/aptos init --network devnet
+
+
+Aptos CLI is now set up for account 0xa34eccc779f70e01ef6a3d286a0299ae17ef3770d94391d8a0685cb0efe2298e as profile default!  Run `aptos --help` for more information about commands
+{
+  "Result": "Success"
+}
+
+
+
+ubuntu@ip-172-31-37-29:~/my-first-dapp/move$
+
+
+/home/ubuntu/.local/bin/aptos move compile --named-addresses todolist=0xa34eccc779f70e01ef6a3d286a0299ae17ef3770d94391d8a0685cb0efe2298e
+
+/home/ubuntu/.local/bin/aptos move publish --named-addresses todolist=0xa34eccc779f70e01ef6a3d286a0299ae17ef3770d94391d8a0685cb0efe2298e
+
+
+
+
+
+
+
 
 
 
