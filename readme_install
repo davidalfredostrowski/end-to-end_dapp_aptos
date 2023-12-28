@@ -214,6 +214,87 @@ module todolist_addr::todolist {
 }
 
 
+ cd ..
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$ /home/ubuntu/.local/bin/aptos move compile
+Compiling, may take a little while to download git dependencies...
+FETCHING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING my_todo_list
+warning[W09001]: unused alias
+  ┌─ /home/ubuntu/my-first-dapp/move/sources/todolist.move:3:26
+  │
+3 │     use aptos_framework::account;
+  │                          ^^^^^^^ Unused 'use' of alias 'account'. Consider removing it
+
+warning: unused alias
+  ┌─ /home/ubuntu/my-first-dapp/move/sources/todolist.move:3:26
+  │
+3 │     use aptos_framework::account;
+  │                          ^^^^^^^ Unused 'use' of alias 'account'. Consider removing it
+
+{
+  "Result": [
+    "e3989b8a7d3b521b7a0debc7abd3be1bc31b8282f5cf7dc363fd3431320e1301::todolist"
+  ]
+}
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$ /home/ubuntu/.local/bin/aptos move publish
+Compiling, may take a little while to download git dependencies...
+UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING my_todo_list
+warning[W09001]: unused alias
+  ┌─ /home/ubuntu/my-first-dapp/move/sources/todolist.move:3:26
+  │
+3 │     use aptos_framework::account;
+  │                          ^^^^^^^ Unused 'use' of alias 'account'. Consider removing it
+
+warning: unused alias
+  ┌─ /home/ubuntu/my-first-dapp/move/sources/todolist.move:3:26
+  │
+3 │     use aptos_framework::account;
+  │                          ^^^^^^^ Unused 'use' of alias 'account'. Consider removing it
+
+package size 2565 bytes
+Do you want to submit a transaction for a range of [179600 - 269400] Octas at a gas unit price of 100 Octas? [yes/no] >
+yes
+{
+  "Result": {
+    "transaction_hash": "0x1b2a6a42ce9983f85ba66e02e33dc41d52af843c9d1134818179e428e436d1a4",
+    "gas_used": 1796,
+    "gas_unit_price": 100,
+    "sender": "e3989b8a7d3b521b7a0debc7abd3be1bc31b8282f5cf7dc363fd3431320e1301",
+    "sequence_number": 0,
+    "success": true,
+    "timestamp_us": 1703785411094132,
+    "version": 3963652,
+    "vm_status": "Executed successfully"
+  }
+}
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$
+
+
+ubuntu@ip-172-31-18-204:~/my-first-dapp$ npx create-react-app client --template typescript
+
+s
+ubuntu@ip-172-31-18-204:~/my-first-dapp/client/src$ vi App.tsx
+ubuntu@ip-172-31-18-204:~/my-first-dapp/client/src$
+## add the address.
+
+reportWebVitals.ts
+ubuntu@ip-172-31-18-204:~/my-first-dapp/client/src$ vi index.tsx
+ubuntu@ip-172-31-18-204:~/my-first-dapp/client/src$
+
+
+ubuntu@ip-172-31-18-204:~/my-first-dapp/client$ vi package.json
+ubuntu@ip-172-31-18-204:~/my-first-dapp/client$ rm -r node_modules/
+ubuntu@ip-172-31-18-204:~/my-first-dapp/client$ npm install
+
+
+
 ubuntu@ip-172-31-44-243:~/my-first-dapp$ /home/ubuntu/.local/bin/aptos move compile
 Compiling, may take a little while to download git dependencies...
 FETCHING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
