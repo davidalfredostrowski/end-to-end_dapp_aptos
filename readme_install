@@ -14,8 +14,16 @@ pip3 install aptos-sdk
 git clone https://github.com/aptos-labs/aptos-core.git
 curl -fsSL "https://aptos.dev/scripts/install_cli.py" | python3
 
+ubuntu@ip-172-31-18-204:~$ pwd
+/home/ubuntu
+
 mkdir my-first-dapp
 cd my-first-dapp
+ubuntu@ip-172-31-18-204:~/my-first-dapp$ pwd
+/home/ubuntu/my-first-dap
+mkdir move
+
+
 pwd
 /home/ubuntu/my-first-dapp
 ubuntu@ip-172-31-44-243:~/my-first-dapp$ /home/ubuntu/.local/bin/aptos move init --name my_todo_list
