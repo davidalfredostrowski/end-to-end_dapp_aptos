@@ -23,40 +23,40 @@ ubuntu@ip-172-31-18-204:~/my-first-dapp$ pwd
 /home/ubuntu/my-first-dap
 mkdir move
 
-
-pwd
-/home/ubuntu/my-first-dapp
-ubuntu@ip-172-31-44-243:~/my-first-dapp$ /home/ubuntu/.local/bin/aptos move init --name my_todo_list
+ubuntu@ip-172-31-18-204:~/my-first-dapp$ cd move
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$ /home/ubuntu/.local/bin/aptos move init --name my_todo_list
 {
   "Result": "Success"
 }
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$
 
-ubuntu@ip-172-31-44-243:~/my-first-dapp$ ls
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$ ls
 Move.toml  scripts  sources  tests
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$
 
-ubuntu@ip-172-31-44-243:~/my-first-dapp$ /home/ubuntu/.local/bin/aptos init --network devnet
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$ /home/ubuntu/.local/bin/aptos init --network devnet
 Configuring for profile default
 Configuring for network Devnet
 Enter your private key as a hex literal (0x...) [Current: None | No input: Generate new key (or keep one if present)]
 
 No key given, generating key...
-Account 0x23393ecdc3ea6c15db022ae5425c5353964a597cefc5ed45cc7e3256a7e133cb doesn't exist, creating it and funding it with 100000000 Octas
-Account 0x23393ecdc3ea6c15db022ae5425c5353964a597cefc5ed45cc7e3256a7e133cb funded successfully
+Account 0xe3989b8a7d3b521b7a0debc7abd3be1bc31b8282f5cf7dc363fd3431320e1301 doesn't exist, creating it and funding it with 100000000 Octas
+Account 0xe3989b8a7d3b521b7a0debc7abd3be1bc31b8282f5cf7dc363fd3431320e1301 funded successfully
 
 ---
-Aptos CLI is now set up for account 0x23393ecdc3ea6c15db022ae5425c5353964a597cefc5ed45cc7e3256a7e133cb as profile default!  Run `aptos --help` for more information about commands
+Aptos CLI is now set up for account 0xe3989b8a7d3b521b7a0debc7abd3be1bc31b8282f5cf7dc363fd3431320e1301 as profile default!  Run `aptos --help` for more information about commands
 {
   "Result": "Success"
 }
-ubuntu@ip-172-31-44-243:~/my-first-dapp$
 
 
 
-ubuntu@ip-172-31-44-243:~/my-first-dapp$ cd .aptos/
-ubuntu@ip-172-31-44-243:~/my-first-dapp/.aptos$ ls
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$ cd .aptos
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move/.aptos$ ls
 config.yaml
-ubuntu@ip-172-31-44-243:~/my-first-dapp/.aptos$ vi config.yaml
-ubuntu@ip-172-31-44-243:~/my-first-dapp/.aptos$
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move/.aptos$ vi config.yaml
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move/.aptos$
 ---
 profiles:
   default:
@@ -70,20 +70,14 @@ profiles:
 ~
 
 
-
-
-ubuntu@ip-172-31-44-243:~/my-first-dapp$ vi Move.toml
-ubuntu@ip-172-31-44-243:~/my-first-dapp$
-
-
-ubuntu@ip-172-31-44-243:~/my-first-dapp$ vi Move.toml
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move$ vi Move.toml
 [package]
 name = "my_todo_list"
 version = "1.0.0"
 authors = []
 
 [addresses]
-todolist_addr='23393ecdc3ea6c15db022ae5425c5353964a597cefc5ed45cc7e3256a7e133cb'
+todolist_addr='e3989b8a7d3b521b7a0debc7abd3be1bc31b8282f5cf7dc363fd3431320e1301'
 
 
 [dev-addresses]
@@ -94,12 +88,12 @@ rev = "mainnet"
 subdir = "aptos-move/framework/aptos-framework"
 
 [dev-dependencies]
-~
+
 ~
 ~
 
 
-ubuntu@ip-172-31-44-243:~/my-first-dapp/sources$ vi todolist.move
+ubuntu@ip-172-31-18-204:~/my-first-dapp/move/sources$ vi todolist.move
 
 #### grab from https://github.com/aptos-labs/aptos-core/tree/main/aptos-move/move-examples/my_first_dapp
 
